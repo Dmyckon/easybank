@@ -25,7 +25,7 @@
       </style>
       <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
 </head>
-<body class="bg-[#fafafa]">
+<body class="bg-[#fafafa] relative">
     <nav class="ps-5 bg-[#ffffff] pe-4 flex justify-between p-5 md:ps-28 md:pe-28">
         <img src="./logo.svg" class="h-5 md:h-6">
         <div class="hidden md:flex md:text-gray-500 md:pt-1 text-sm">
@@ -38,5 +38,19 @@
         <div class="hidden md:flex grid p-2 w-36 ps-5 text-center text-white font-bold bg-gradient-to-r from-[#31d35c] to-[#2bb7da] rounded-3xl">Request Invite</div>
         <spa class="md:hidden">&#9776</spa>
     </nav>
+    <div class="md:flex md:ps-24">
+      <div class="bg-no-repeat md:hidden" style="background-image: url(./bg-intro-mobile.svg);">
+        <img src="./image-mockups.png" class="w-[95%] ps-5">
+      </div>
+    <div class="text-center p-5 md:text-start md:w-[38%] md:pt-36">
+      <h1 class="text-4xl pb-5 md:text-5xl">Next generation digital banking</h1>
+      <p class="pb-5">Take your financial life online. Your Easybank account will be a one-stop-shop 
+        for spending, saving, budgeting, investing, and much more.</p>
+      <div class="grid p-2 ms-24 w-36 text-center text-white font-bold bg-gradient-to-r from-[#31d35c] to-[#2bb7da] rounded-3xl md:ms-0">Request Invite</div>
+    </div>
+      <div class="hidden md:absolute md:flex bg-no-repeat md:left-[40%] md:w-[60%]" style="background-image: url(./bg-intro-desktop.svg); background-size: 100%;">
+        <img src="./image-mockups.png" class="md:w-[80%] md:ms-36">
+      </div>
+    </div>
 </body>
 </html>
