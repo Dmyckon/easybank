@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+      <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+      <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+</head>
+<body class="bg-[#fafafa]">
+    <nav class="ps-5 bg-[#ffffff] pe-4 flex justify-between p-5 md:ps-28 md:pe-28">
+        <img src="./logo.svg" class="h-5 md:h-6">
+        <div class="hidden md:flex md:text-gray-500 md:pt-1 text-sm">
+            <ul class="pe-7">Home</ul>
+            <ul class="pe-7">About</ul>
+            <ul class="pe-7">Contact</ul>
+            <ul class="pe-7">Blog</ul>
+            <ul class="pe-7">Careers</ul>
+        </div>
+        <div class="hidden md:flex grid p-2 w-36 ps-5 text-center text-white font-bold bg-gradient-to-r from-[#31d35c] to-[#2bb7da] rounded-3xl">Request Invite</div>
+        <spa class="md:hidden">&#9776</spa>
+    </nav>
+</body>
+</html>
